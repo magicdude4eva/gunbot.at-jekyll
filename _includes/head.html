@@ -1,0 +1,67 @@
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="rating" content="General">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="description" content="{{ site.description  }}">
+    <link rel="canonical" href="{{ site.url }}">
+    <meta name="Content-Language" content="en">
+    <meta name="Coverage" content="Worldwide">
+    <meta name="copyright" content="Copyright ©2020-{{ 'now' | date: "%Y" }} by {{ site.title }}. All Rights Reserved.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description  }}">
+    <meta property="og:image" content="{{ site.url }}/assets/img/cover_facebook.png">
+		<meta property="og:image:secure_url" content="{{ site.url }}/assets/img/cover_facebook.png">
+    <meta name="keywords" content="{{site.keywords }}">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="{{ site.url }}">
+    <meta name="twitter:domain" content="{{ site.domain }}"/>
+    <meta name="twitter:site" content="{{ site.twitter_username }}"/>
+    <meta name="twitter:title" content="{{ site.title }}"/>
+    <meta name="twitter:description" content="{{ site.description  }}"/>
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/cover_twitter.png"/>
+    <meta name="subject" content="{{ site.cardtitle }}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="{{ site.baseurl }}/assets/favicons/safari-pinned-tab.svg" color="#cac510">
+    <link rel="manifest" href="{{ site.baseurl }}/assets/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="gunbot.at">
+    <meta name="application-name" content="gunbot.at">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/assets/favicons/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#0f0f0f">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/all.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json" data-react-helmet="true">{"@context":"https://schema.org","@type":"Organization","url":"{{ site.url }}","logo":"{{ site.url }}/assets/favicons/android-chrome-192x192.png"}</script><script type="application/ld+json" data-react-helmet="true">{"@context":"http://schema.org","@type":"WebPage","name":"{{ site.domain }}","description":"Gunbot is the leading crypto trading bot for popular exchanges like Binance, Coinbase Pro, Bitmex and more.","publisher":{"@type":"ProfilePage","name":"{{ site.domain }}"}}</script><script type="application/ld+json" data-react-helmet="true">{"@context":"https://schema.org","@type":"Organization","name":"{{ site.domain }}","url":"{{ site.url }}","sameAs":["https://github.com/{{ site.github_username }}"]}</script>
+
+{% if site.googletagmanager %}
+  {% include analytics.html %}
+{% endif %}
+</head>

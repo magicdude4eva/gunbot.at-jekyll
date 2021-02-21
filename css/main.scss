@@ -1,0 +1,208 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// variables.less
+$theme-primary: #F05F40;
+$theme-dark: #222;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;
+
+ .wrapper {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+}
+
+.package {
+  box-sizing: border-box;
+  width: 265px;
+  height: 770px;
+  border: 3px solid #e8e8e8;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 18px;
+  text-align: center;
+  transition: margin-top 0.5s linear;
+  position: relative;
+  margin-right: 12px;
+  margin-left: 15px;
+  margin-top: 0px;
+  background-color: #e8e8e8;
+}
+
+.package:hover {
+  margin-top: -5px;
+  transition: margin-top 0.3s linear;
+}
+
+.packagename {
+    color: #000000;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: -5px;
+}
+.price {
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.packageinfo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2px 21px 2px 21px;
+    color: #151616;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    bottom: 5px;
+    height: 60px;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 29px;
+}
+
+.package ul li {
+  margin-bottom: 15px;
+}
+.package ul li:before {
+  font-size: 1.3rem;
+  color: #089131;
+  margin-right: 3px;
+}
+
+.brilliant::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+}
+
+.package ul li.not:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    color: #910202;
+    font-weight: 900;
+}
+
+.package ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-weight: 900;
+}
+
+.brilliant {
+  border-color: #33c4b6;
+}
+.brilliant::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: #3bc6b8 transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.brilliant::after {
+  color: white;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  text-shadow: 0 0 2px #37c5b6;
+  font-size: 1.4rem;
+}
+
+.currentPrice {
+font-family: Inter, system-ui;
+--text-opacity: 1;
+color: rgba(26,32,44,var(--text-opacity));
+--bg-opacity: 1;
+line-height: 1;
+box-sizing: border-box;
+border: 0 solid #e2e8f0;
+font-size: 1.875rem;
+font-weight: 700;
+display: block;
+float:left;
+}
+
+.oldPrice {
+    line-height: 1.5;
+font-family: Inter, system-ui;
+font-weight: 500;
+--bg-opacity: 1;
+box-sizing: border-box;
+border: 0 solid #e2e8f0;
+--text-opacity: 1;
+color: rgba(160,174,192,var(--text-opacity));
+font-size: 1.125rem;
+text-decoration: line-through;
+display: block;
+float: right;    
+}
+
+.packagecta {
+line-height: 1.5;
+font-family: Inter, system-ui;
+--text-opacity: 1;
+color: rgba(26,32,44,var(--text-opacity));
+--bg-opacity: 1;
+box-sizing: border-box;
+border: 0 solid #e2e8f0;
+margin-top: 2.5rem;
+}
+
+  .tooltip > .tooltip-inner {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    border: 1px solid green; 
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid green;
+  }

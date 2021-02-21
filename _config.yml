@@ -1,0 +1,57 @@
+# Site settings
+title: Gunbot - Gunbot Automated crypto trading Bot | gunbot.at
+email: info@gunbot.at
+domain: 'gunbot.at'
+description: "Serious Crypto trading automation. Gunbot is the leading crypto trading bot for Binance, Coinbase Pro, Bitmex and more. Easy to use &amp; self hosted. For spot and futures trading."
+keywords: "cryptocurrency,trade,trading,bot,crypto,gunbot,bitcoin,btc bitmex,poloniex,binance,huobi,bitfinex,kucoin,bittrex,kraken,cex,gdax,cobinhood,gunthy"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://gunbot.at" # the base hostname & protocol for your site
+
+twitter_username: gerdnaschenweng
+github_username: magicdude4eva
+telegram: magicdude4eva
+
+# Tracker
+googletagmanager: "G-T10C1DE21Y"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Build settings
+compress-site: yes
+
+encoding: "utf-8"
+
+# Compression - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: []
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
