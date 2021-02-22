@@ -61,7 +61,5 @@
 
     <script type="application/ld+json" data-react-helmet="true">{"@context":"https://schema.org","@type":"Organization","url":"{{ site.url }}","logo":"{{ site.url }}/assets/favicons/android-chrome-192x192.png"}</script><script type="application/ld+json" data-react-helmet="true">{"@context":"http://schema.org","@type":"WebPage","name":"{{ site.domain }}","description":"Gunbot is the leading crypto trading bot for popular exchanges like Binance, Coinbase Pro, Bitmex and more.","publisher":{"@type":"ProfilePage","name":"{{ site.domain }}"}}</script><script type="application/ld+json" data-react-helmet="true">{"@context":"https://schema.org","@type":"Organization","name":"{{ site.domain }}","url":"{{ site.url }}","sameAs":["https://github.com/{{ site.github_username }}"]}</script>
 
-{% if site.googletagmanager %}
-  {% include analytics.html %}
-{% endif %}
+    {% gtm head %}
 </head>

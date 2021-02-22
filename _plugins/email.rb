@@ -17,7 +17,7 @@ module Jekyll
         reversed = encode(@email.each_char.to_a.reverse.join)
         obfuscated = encode(@email)
         "<script>" +
-        " document.write('<a style=\"#{STYLE}\" href=\"#{MAIL_TO}#{obfuscated}\">#{reversed}</a>');" +
+        " document.write('<a style=\"#{STYLE}\" title=\"Send email\" href=\"#{MAIL_TO}#{obfuscated}\">#{reversed}</a>');" +
         "</script>"
       end
   

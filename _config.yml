@@ -12,7 +12,9 @@ github_username: magicdude4eva
 telegram: magicdude4eva
 
 # Tracker
-googletagmanager: "G-T10C1DE21Y"
+google:
+  tag_manager:
+    container_id: GTM-K2899Q2
 
 # Sass/SCSS
 sass:
