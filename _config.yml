@@ -11,6 +11,10 @@ twitter_username: gerdnaschenweng
 github_username: magicdude4eva
 telegram: magicdude4eva
 
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+
 # Tracker
 google:
   tag_manager:
