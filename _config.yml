@@ -7,18 +7,12 @@ keywords: "cryptocurrency,trade,trading,bot,crypto,gunbot,bitcoin,btc bitmex,pol
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://gunbot.at" # the base hostname & protocol for your site
 
-twitter_username: gerdnaschenweng
 github_username: magicdude4eva
 telegram: magicdude4eva
 
 plugins:
   - jekyll-last-modified-at
   - jekyll-sitemap
-
-# Tracker
-google:
-  tag_manager:
-    container_id: GTM-K2899Q2
 
 # Sass/SCSS
 sass:
